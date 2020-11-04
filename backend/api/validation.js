@@ -1,4 +1,4 @@
-module.exports = app =>{
+module.exports = app => {
     function existsOrError(value, msg){
         if(!value) throw msg
         if(Array.isArray(value) && value.length == 0) throw msg
@@ -11,11 +11,13 @@ module.exports = app =>{
         }catch(msg){
             return 
         }
+        
         throw msg
     }
     
     function equalsOrError(valueA, valueB, msg){
         if(valueA !== valueB) throw msg
     }
+ 
     return{existsOrError, notExistsOrError, equalsOrError}
 }
