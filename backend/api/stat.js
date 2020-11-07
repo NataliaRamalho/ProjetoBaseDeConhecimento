@@ -3,9 +3,9 @@ module.exports = app =>{
         users: Number,
         categories: Number,
         articles: Number,
-        cretedAt: Date
+        createdAt: Date
     })
-
+    
     const get = (req, res) =>{
         Stat.findOne({}, {}, {sort: {'createdAt': -1}})
             .then(stat => {
