@@ -53,7 +53,9 @@
             </b-col>
          </b-row>
       </b-form>
+    
       <hr>
+    
       <b-table hover striped :items="users" :fields="fields">
           <template slot="actions" slot-scope="data">
               <b-button variant="warning" 
