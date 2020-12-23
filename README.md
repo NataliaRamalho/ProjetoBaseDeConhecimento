@@ -51,13 +51,15 @@ npm install
   
    ```sh
 npm start
+```
+
 
  <li> Rodando o frontend da aplicação </li>
   <p> Com o projeto aberto no editor de código e dentro da pasta frontend, digite o comando abaixo </p>
   
    ```sh
 npm serve
-
+```
 
 
   
